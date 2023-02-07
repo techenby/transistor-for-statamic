@@ -1,0 +1,22 @@
+{
+    "name": "techenby/transistor-for-statamic",
+    "autoload": {
+        "psr-4": {
+            "Techenby\\TransistorForStatamic\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Transistor For Statamic",
+            "description": "Transistor For Statamic addon"
+        },
+        "laravel": {
+            "providers": [
+                "Techenby\\TransistorForStatamic\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
