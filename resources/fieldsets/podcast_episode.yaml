@@ -1,0 +1,193 @@
+title: 'Podcast Episode'
+fields:
+  -
+    handle: alternate_url
+    field:
+      type: text
+      display: 'Alternate episode URL overriding the share_url'
+      localizable: false
+  -
+    handle: audio_processing
+    field:
+      type: toggle
+      display: 'Denotes processing of audio after creating or updating the audio_url'
+      localizable: false
+  -
+    handle: author
+    field:
+      type: text
+      display: 'Episode author'
+      localizable: false
+  -
+    handle: created_at
+    field:
+      mode: single
+      time_enabled: false
+      time_seconds_enabled: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: 'Timestamp of creation'
+      type: date
+      icon: date
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: published_at
+    field:
+      mode: single
+      time_enabled: false
+      time_seconds_enabled: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: "Episode publishing date and time - in your podcast's time zone"
+      type: date
+      icon: date
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: updated_at
+    field:
+      mode: single
+      time_enabled: false
+      time_seconds_enabled: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: 'Timestamp of last update'
+      type: date
+      icon: date
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: description
+    field:
+      type: text
+      display: 'Longer episode description which may contain HTML'
+      localizable: false
+  -
+    handle: duration_in_mmss
+    field:
+      type: text
+      display: 'Duration of episode in minutes and seconds. e.g. 34:12'
+      localizable: false
+  -
+    handle: email_notifications
+    field:
+      type: text
+      display: 'Private podcast email notifications override (defaults to Show setting)'
+      localizable: false
+  -
+    handle: embed_html
+    field:
+      type: text
+      display: 'Embeddable audio player HTML'
+      localizable: false
+  -
+    handle: embed_html_dark
+    field:
+      type: text
+      display: 'Dark theme of the embeddable audio player HTML'
+      localizable: false
+  -
+    handle: explicit
+    field:
+      type: toggle
+      display: 'Episode contains explicit content'
+      localizable: false
+  -
+    handle: formatted_published_at
+    field:
+      type: text
+      display: 'Formatted version of the published_at datetime field'
+      localizable: false
+  -
+    handle: formatted_summary
+    field:
+      type: text
+      display: 'Formatted episode summary short description'
+      localizable: false
+  -
+    handle: image_url
+    field:
+      type: text
+      display: 'Episode artwork image URL'
+      localizable: false
+  -
+    handle: keywords
+    field:
+      type: text
+      display: 'Comma-separated list of keywords'
+      localizable: false
+  -
+    handle: media_url
+    field:
+      type: text
+      display: 'Trackable audio MP3 URL'
+      localizable: false
+  -
+    handle: share_url
+    field:
+      type: text
+      display: 'Social media sharing page URL'
+      localizable: false
+  -
+    handle: status
+    field:
+      type: text
+      display: 'Publishing status: published, scheduled, or draft'
+      localizable: false
+  -
+    handle: summary
+    field:
+      type: text
+      display: 'Episode summary short description'
+      localizable: false
+  -
+    handle: title
+    field:
+      type: text
+      display: 'Episode title'
+      localizable: false
+  -
+    handle: transcript_url
+    field:
+      type: text
+      display: 'Shareable url for the episode transcript'
+      localizable: false
+  -
+    handle: type
+    field:
+      type: text
+      display: 'Full, trailer, or bonus episode'
+      localizable: false
+  -
+    handle: number
+    field:
+      display: 'Episode number'
+      type: integer
+      icon: integer
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: season
+    field:
+      display: 'Season number'
+      type: integer
+      icon: integer
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible

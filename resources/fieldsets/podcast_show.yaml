@@ -1,0 +1,430 @@
+title: 'Podcast Show'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast title'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: slug
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast slug (used for API and RSS Feed URL)'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: description
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast Description'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: author
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast author'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: category
+    field:
+      input_type: text
+      antlers: false
+      display: 'Primary category'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: secondary_category
+    field:
+      input_type: text
+      antlers: false
+      display: 'Secondary category'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: copyright
+    field:
+      input_type: text
+      antlers: false
+      display: 'Copyright information'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: keywords
+    field:
+      input_type: text
+      antlers: false
+      display: 'Comma-separated list of keywords'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: email_notifications
+    field:
+      default: false
+      display: 'Private podcast email notifications'
+      type: toggle
+      icon: toggle
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: language
+    field:
+      input_type: text
+      antlers: false
+      display: "Podcast's spoken language"
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: website
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast website'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: image_url
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast aurtwork image URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: explicit
+    field:
+      default: false
+      display: 'Podcast contains explicit content'
+      type: toggle
+      icon: toggle
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: multiple_seasons
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast has multiple seasons'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: owner_email
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast owner email'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: private
+    field:
+      default: false
+      display: 'Podcast is private and subscribers are managed by admins'
+      type: toggle
+      icon: toggle
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: show_type
+    field:
+      input_type: text
+      antlers: false
+      display: 'Publishing type'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      instructions: 'Episodic displays newest episodes, serial displays oldest first'
+  -
+    handle: time_zone
+    field:
+      input_type: text
+      antlers: false
+      display: 'Publishing time zone'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: created_at
+    field:
+      mode: single
+      time_enabled: false
+      time_seconds_enabled: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: 'Created At'
+      type: date
+      icon: date
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: updated_at
+    field:
+      mode: single
+      time_enabled: false
+      time_seconds_enabled: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: 'Updated At'
+      type: date
+      icon: date
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: amazon_music
+    field:
+      input_type: text
+      antlers: false
+      display: 'Amazon Music URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: apple_podcasts
+    field:
+      input_type: text
+      antlers: false
+      display: 'Apple Podcasts URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: castbox
+    field:
+      input_type: text
+      antlers: false
+      display: 'Castbox URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: castro
+    field:
+      input_type: text
+      antlers: false
+      display: 'Castro URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: deezer
+    field:
+      input_type: text
+      antlers: false
+      display: 'Deezer URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: feed_url
+    field:
+      input_type: text
+      antlers: false
+      display: 'Podcast RSS Feed URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: google_podcasts
+    field:
+      input_type: text
+      antlers: false
+      display: 'Google Podcasts URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: iHeartRadio
+    field:
+      input_type: text
+      antlers: false
+      display: 'iHeartRadio URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: overcast
+    field:
+      input_type: text
+      antlers: false
+      display: 'Overcast URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: pandora
+    field:
+      input_type: text
+      antlers: false
+      display: 'Pandora URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: radioPublic
+    field:
+      input_type: text
+      antlers: false
+      display: 'RadioPublic URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: soundcloud
+    field:
+      input_type: text
+      antlers: false
+      display: 'Soundcloud URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: spotify
+    field:
+      input_type: text
+      antlers: false
+      display: 'Spotify URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: stitcher
+    field:
+      input_type: text
+      antlers: false
+      display: 'Stitcher URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: tuneIn
+    field:
+      input_type: text
+      antlers: false
+      display: 'TuneIn URL'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
