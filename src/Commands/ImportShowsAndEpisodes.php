@@ -55,24 +55,21 @@ class ImportShowsAndEpisodes extends Command
 
         $this->line('Importing episodes...');
 
-        $response = $client->get('v1/episodes?fields[episode][]=title');
+        $response = $client->get('v1/episodes?pagination[per]=10&pagination[page]=1');
 
         $data = json_decode($response->getBody()->getContents(), true);
-        dd($data);
 
         $this->processEpisodes($data['data']);
 
         if ($data['meta']['totalPages'] > 1) {
             foreach (range(2, $data['meta']['totalPages']) as $page) {
-                $response = $client->get("v1/episodes?fields[episode][]=title&pagination[page]={$page}");
+                $response = $client->get("v1/episodes?pagination[per]=10&pagination[page]={$page}");
 
                 $data = json_decode($response->getBody()->getContents(), true);
-                dd($data);
 
                 $this->processEpisodes($data['data']);
             }
         }
-
     }
 
     private function createShow($show)
@@ -95,7 +92,7 @@ class ImportShowsAndEpisodes extends Command
     private function createEpisode($episode)
     {
         $attributes = $episode['attributes'];
-        $attributes['[transistor_]id'] = $episode['id'];
+        $attributes['transistor_id'] = $episode['id'];
         $attributes['transistor_title'] = $attributes['title'];
         $attributes['transistor_show_id'] = $episode['relationships']['show']['data']['id'];
         $attributes['podcast_show'] = $this->findEntry('show', 'transistor_id', $attributes['transistor_show_id'])->id;
@@ -125,6 +122,7 @@ class ImportShowsAndEpisodes extends Command
     {
         foreach($episodes as $episode) {
             $found = $this->findEntry('episode', 'transistor_id', $episode['id']);
+            // dd($found, $episode['id']);
 
             if ($found === null) {
                 $this->createEpisode($episode);

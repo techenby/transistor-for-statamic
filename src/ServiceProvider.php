@@ -3,6 +3,7 @@
 namespace Techenby\TransistorForStatamic;
 
 use Illuminate\Support\Facades\Artisan;
+use Statamic\Facades\Utility;
 use Statamic\Providers\AddonServiceProvider;
 use Statamic\Statamic;
 use Techenby\TransistorForStatamic\Commands\ImportShowsAndEpisodes;
@@ -18,13 +19,6 @@ class ServiceProvider extends AddonServiceProvider
         $this
             ->bootAddonConfig()
             ->bootAddonInstallCommand();
-        //     // ->bootAddonViews()
-        //     // ->bootAddonBladeDirective()
-        //     // ->bootAddonPermissions()
-        //     // ->bootAddonNav()
-        //     // ->bootAddonSubscriber()
-        //     // ->bootAddonGlidePresets()
-        //     ->bootAddonCommands();
     }
 
     protected function bootAddonConfig()
@@ -52,5 +46,12 @@ class ServiceProvider extends AddonServiceProvider
             Artisan::call('vendor:publish --tag=transistor-content');
             Artisan::call('vendor:publish --tag=transistor-blueprints');
         });
+
+        return $this;
+    }
+
+    protected function schedule($schedule)
+    {
+        $schedule->command('tfs:import')->daily();
     }
 }
