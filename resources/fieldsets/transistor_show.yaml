@@ -1,11 +1,11 @@
 title: 'Podcast Show'
 fields:
   -
-    handle: title
+    handle: transistor_id
     field:
       input_type: text
       antlers: false
-      display: 'Podcast title'
+      display: 'Transistor Podcast Show ID'
       type: text
       icon: text
       localizable: false
@@ -13,7 +13,19 @@ fields:
       instructions_position: above
       visibility: visible
   -
-    handle: slug
+    handle: transistor_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Transistor Podcast title'
+      type: text
+      icon: text
+      localizable: false
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: transistor_slug
     field:
       input_type: text
       antlers: false

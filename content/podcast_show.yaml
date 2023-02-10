@@ -1,0 +1,10 @@
+title: 'Podcast Show'
+template: podcast_show
+layout: layout
+revisions: false
+route: '/podcast-show/{slug}'
+sort_dir: asc
+date: true
+date_behavior:
+  past: public
+  future: private

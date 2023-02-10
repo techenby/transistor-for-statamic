@@ -154,10 +154,22 @@ fields:
       display: 'Episode summary short description'
       localizable: false
   -
-    handle: title
+    handle: transistor_id
     field:
       type: text
-      display: 'Episode title'
+      display: 'Transistor Episode ID'
+      localizable: false
+  -
+    handle: transistor_show_id
+    field:
+      type: text
+      display: 'Transistor Show ID'
+      localizable: false
+  -
+    handle: transistor_title
+    field:
+      type: text
+      display: 'Transistor Episode title'
       localizable: false
   -
     handle: transcript_url

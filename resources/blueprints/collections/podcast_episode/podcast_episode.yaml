@@ -1,0 +1,46 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          localizable: false
+          validate:
+            - required
+      -
+        import: 'transistor-for-statamic::transistor_episode'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          localizable: false
+          validate:
+            - required
+      -
+        handle: podcast_show
+        field:
+          max_items: 1
+          mode: select
+          create: false
+          collections:
+            - podcast_show
+          display: 'Podcast Show'
+          type: entries
+          icon: entries
+          localizable: false
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: 'Podcast Episode'
